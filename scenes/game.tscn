@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://7shjl50p20cs"]
+
+[ext_resource type="PackedScene" uid="uid://bpwa6alnnkpvt" path="res://scenes/tails.tscn" id="2_6hp5r"]
+[ext_resource type="PackedScene" uid="uid://bfle3vmo2kbrh" path="res://scenes/slope world.tscn" id="2_m2ifj"]
+[ext_resource type="PackedScene" uid="uid://brx6lmei3pv67" path="res://scenes/enemy.tscn" id="3_w5638"]
+
+[node name="Game" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." groups=["player"] instance=ExtResource("2_6hp5r")]
+position = Vector2(158.128, 280.897)
+
+[node name="SlopeWorld" parent="." instance=ExtResource("2_m2ifj")]
+position = Vector2(108, -11)
+
+[node name="enemy" parent="." instance=ExtResource("3_w5638")]
+position = Vector2(512, 315)

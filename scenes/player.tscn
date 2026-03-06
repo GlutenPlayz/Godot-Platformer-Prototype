@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://u0o6l5s870tg"]
+
+[ext_resource type="Script" path="res://scripts/dk ds.gd" id="1_i8sfd"]
+[ext_resource type="Texture2D" uid="uid://dei86bbe6y281" path="res://spirtes/GhfcpqNXEAALE11.jpg" id="1_nmxow"]
+[ext_resource type="Script" path="res://scripts/reset_button.gd" id="3_i7vbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vycp"]
+size = Vector2(99.2794, 141.442)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(2.12778, -169.103)
+script = ExtResource("1_i8sfd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6.59816, -76.1021)
+scale = Vector2(0.212932, 0.222276)
+texture = ExtResource("1_nmxow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.48807, -76.1759)
+shape = SubResource("RectangleShape2D_7vycp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(79.8722, -120.897)
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="reset button" type="Node" parent="."]
+script = ExtResource("3_i7vbx")
