@@ -47,3 +47,4 @@ The project also helped me experiment with structuring movement systems and tuni
 - More complex level layouts to test movement systems
 - Expanded physics interactions with enemies
 - Improved audio feedback
+- Make my own sprites
